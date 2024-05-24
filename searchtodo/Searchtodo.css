@@ -1,0 +1,131 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px; 
+}
+
+.nav {
+    width: 100%;
+}
+
+.main {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.submain1, .submain2 {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 140px);
+    box-sizing: border-box;
+}
+
+.submain1 {
+    margin-bottom: 10px;
+}
+
+.btnup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btnup:hover {
+    background-color: #218838;
+}
+
+.edit, .delete, .complete {
+    padding: 10px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px; /* Added margin */
+}
+
+.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit:hover {
+    background-color: #e0a800;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 3px;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+.complete {
+    background-color: #007bff;
+    color: white;
+    margin-left: 3px;
+}
+
+.complete:hover {
+    background-color: #0069d9;
+}
+
+.ulist {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.names {
+    flex-grow: 1;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.buttons-container button {
+    margin-right: 5px;
+}
+
+.datepicker {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .submain1, .submain2 {
+        width: calc(100% - 120px);
+    }
+
+    .buttons-container {
+        top: 20px;
+        left: 20px;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .submain1, .submain2 {
+        width: calc(100% - 20px);
+    }
+}
